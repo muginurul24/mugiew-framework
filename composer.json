@@ -1,0 +1,19 @@
+{
+  "name": "mugiew/galeano",
+  "description": "A simple PHP framework for building web applications.",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Mugiew\\Galeano\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Mugi Nurul Ihksani",
+      "email": "iqooz9xmg@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.3"
+  }
+}
