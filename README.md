@@ -179,10 +179,10 @@ php artisan octane:install --server=frankenphp
 
 ## Konfigurasi Caddyfile
 
-1. Pastikan kamu berada di dalam folder utama dengan mengetikkan perintah ```cd```, kemudian buat file Caddyfile
+1. Buat file Caddyfile
 
 ```bash
-nano Caddyfile
+cd && nano Caddyfile
 ```
 
 2. Paste dan konfigurasikan sesuai path directory folder kamu, kemudian save
