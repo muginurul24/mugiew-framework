@@ -1,10 +1,15 @@
 {
   "name": "mugiew/galeano",
   "description": "A simple PHP framework for building web applications.",
-  "type": "library",
+  "type": "project",
   "autoload": {
     "psr-4": {
       "Mugiew\\Galeano\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mugiew\\Galeano\\": "tests/"
     }
   },
   "authors": [
@@ -15,5 +20,8 @@
   ],
   "require": {
     "php": ">=8.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.0"
   }
 }

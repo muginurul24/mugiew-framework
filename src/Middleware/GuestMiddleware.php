@@ -8,7 +8,7 @@ use Mugiew\Galeano\Service\SessionService;
 use Mugiew\Galeano\Repository\UserRepository;
 use Mugiew\Galeano\Repository\SessionRepository;
 
-class AuthMiddleware implements Middleware
+class GuestMiddleware implements Middleware
 {
     private SessionService $sessionService;
 
@@ -23,7 +23,7 @@ class AuthMiddleware implements Middleware
     {
         $user = $this->sessionService->current();
 
-        if ($user == null) {
+        if ($user != null) {
             View::redirect('/');
         }
     }
